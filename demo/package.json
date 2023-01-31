@@ -6,8 +6,9 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
-    "serve": "webpack serve"
+    "build": "webpack --config webpack.config.dev.js",
+    "build-prod": "webpack --config webpack.config.prod.js",
+    "serve": "webpack serve --config webpack.config.dev.js"
   },
   "dependencies": {
     "better-safe-typed-html": "^1.0.0",
