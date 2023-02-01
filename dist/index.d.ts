@@ -6,6 +6,7 @@ interface RenderNode {
     toDom(): Text | HTMLElement;
 }
 type RenderableElement = HTMLElement | RenderNode;
+export declare function idToClass(id: string): string;
 export declare function renderList<T>(container: HTMLElement, options: {
     items: RenderItem<T>[];
     onCreateEl?: (item: RenderItem<T>) => RenderableElement | [RenderableElement, () => void];

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.renderList = void 0;
+exports.renderList = exports.idToClass = void 0;
 function idToClass(id) {
     return 'c' + id.replace(/[^a-z0-9]/g, (s) => {
         var c = s.charCodeAt(0);
@@ -11,6 +11,7 @@ function idToClass(id) {
         return '__' + ('000' + c.toString(16)).slice(-4);
     });
 }
+exports.idToClass = idToClass;
 function renderList(container, options) {
     var _a, _b;
     const { items } = options;
