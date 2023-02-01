@@ -9,7 +9,7 @@ interface RenderNode {
 
 type RenderableElement = HTMLElement | RenderNode;
 
-function idToClass(
+export function idToClass(
     id: string,
 ): string {
     return 'c' + id.replace(/[^a-z0-9]/g, (s) => {
